@@ -1,0 +1,5 @@
+steps:
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['app', 'deploy', '--quiet']
+  # Add '--project=[PROJECT_ID]' if deploying to a specific project
+timeout: '1200s'  # Adjust based on app build time
