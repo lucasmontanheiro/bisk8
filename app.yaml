@@ -15,11 +15,11 @@
 runtime: php83
 
 handlers:
-- url: /.*
-  script: index.php
-
 - url: /corinthians
   script: corinthians.php
+
+- url: /.*
+  script: index.php
 
 - url: /favicon\.ico
   static_files: favicon.ico
