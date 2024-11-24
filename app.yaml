@@ -18,6 +18,9 @@ handlers:
 - url: /.*
   script: index.php
 
+- url: /corinthians
+  script: corinthians.php
+
 - url: /favicon\.ico
   static_files: favicon.ico
   upload: favicon\.ico
