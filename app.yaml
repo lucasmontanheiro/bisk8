@@ -14,3 +14,6 @@ handlers:
     script: \1
   - url: .*
     script: auto
+  - url: /favicon\.ico
+    static_files: favicon.ico
+    upload: favicon\.ico
