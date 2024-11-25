@@ -2,10 +2,13 @@
 
 switch (@parse_url($_SERVER['REQUEST_URI'])['path']) {
     case '/':
-        require 'corinthians.php';
+        require 'homepage.php';
         break;
-    case '/contact.php':
-        require 'contact.php';
+    case '/bisk8':
+        require 'bisk8.php';
+        break;
+    case '/corinthians':
+        require 'corinthians.php';
         break;
     default:
         http_response_code(404);

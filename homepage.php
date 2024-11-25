@@ -5,7 +5,7 @@ echo <<<HTML
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corinthians</title>
+    <title>BISK8</title>
     <style>
         html, body {
             margin: 0;
@@ -22,7 +22,7 @@ echo <<<HTML
     </style>
 </head>
 <body>
-    <iframe src="https://docs.google.com/document/d/e/2PACX-1vQT6zt7XTOqVlOmcLlvUVlQNbMpE9PEKkCe_rs05N0dB3u9_M63eDDSpSV-6GfkGcxkCzaanO-drWLO/pub?embedded=true"></iframe>
+<iframe src="https://docs.google.com/document/d/e/2PACX-1vQsd1IPhwS4hNttet31WZUlzMY_J4QTEF5Flwb-t4j5X_fvgs62657ha9MAmgTxfkPS_bZwscz8NbF5/pub?embedded=true"></iframe>
 </body>
 </html>
 HTML;
