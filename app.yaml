@@ -1,8 +1,16 @@
 runtime: php83
+env: standard
 
 handlers:
-- url: /corinthians
-  script: corinthians.php  # Matches `/corinthians`
-
-- url: /.*
-  script: index.php  # Matches all other routes
+  - url: /index\.html
+    static_files: index.html
+    upload: index\.html
+  - url: /(.+\.(php|html))$
+    script: \1
+  - url: /static/(.*)
+    static_files: static/\1
+    upload: static/.*
+  - url: .*/(.*\.(php|html))$
+    script: \1
+  - url: .*
+    script: auto
