@@ -2,6 +2,9 @@ runtime: php83
 env: standard
 
 handlers:
+  - url: /favicon\.ico
+    static_files: favicon.ico
+    upload: favicon\.ico
   - url: /index\.html
     static_files: index.html
     upload: index\.html
@@ -14,6 +17,3 @@ handlers:
     script: \1
   - url: .*
     script: auto
-  - url: /favicon\.ico
-    static_files: favicon.ico
-    upload: favicon\.ico
