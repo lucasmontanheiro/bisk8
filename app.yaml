@@ -2,6 +2,7 @@ runtime: php83
 
 handlers:
 - url: /corinthians
-  script: corinthians.php
+  script: corinthians.php  # Matches `/corinthians`
+
 - url: /.*
-  script: index.php
+  script: index.php  # Matches all other routes
