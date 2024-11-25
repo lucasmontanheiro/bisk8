@@ -1,29 +1,3 @@
-<?php 
-echo <<<HTML
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corinthians</title>
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%;
-            background-color: black;
-        }
-        iframe {
-            border: none;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
-</head>
-<body>
-    <iframe src="https://docs.google.com/document/d/e/2PACX-1vQT6zt7XTOqVlOmcLlvUVlQNbMpE9PEKkCe_rs05N0dB3u9_M63eDDSpSV-6GfkGcxkCzaanO-drWLO/pub?embedded=true"></iframe>
-</body>
-</html>
-HTML;
-?>
+<?php include("header.html"); ?>
+<?php include("main.html"); ?>
+<?php include("footer.html"); ?>
