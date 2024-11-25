@@ -22,3 +22,5 @@ echo <<<HTML
     </style>
 </head>
 <body>
+HTML;
+?>
