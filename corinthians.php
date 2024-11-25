@@ -23,7 +23,7 @@ echo <<<HTML
             padding: 0;
             height: 100%;
             width: 100%;
-            background-color: #9a9865;
+            background-color: black;
         }
         iframe {
             border: none;
