@@ -1,3 +1,56 @@
+
+CORINTHIANS PAGE
+
+<?php 
+echo <<<HTML
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GQHJY7DQ9M"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-GQHJY7DQ9M');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corinthians</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+        }
+        iframe {
+            border: none;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vQT6zt7XTOqVlOmcLlvUVlQNbMpE9PEKkCe_rs05N0dB3u9_M63eDDSpSV-6GfkGcxkCzaanO-drWLO/pub?embedded=true"></iframe>
+</body>
+</html>
+HTML;
+?>
+
+
+
+
+
+
+
+
+
+
 A MAIN ANTIGA
 
 <?php 
