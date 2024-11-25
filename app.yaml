@@ -20,7 +20,3 @@ handlers:
 
 - url: /.*
   script: index.php
-
-- url: /favicon\.ico
-  static_files: favicon.ico
-  upload: favicon\.ico
