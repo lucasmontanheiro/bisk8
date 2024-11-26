@@ -19,5 +19,5 @@ html, body {
         }
     }
     .blinking {
-        animation: blink 1.5s 5; /* Blink animation */
+        animation: blink 1.5s 3; /* Blink animation */
     }
