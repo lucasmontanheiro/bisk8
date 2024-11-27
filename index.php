@@ -14,8 +14,7 @@ $routes = [
 // Define routes with additional configurations
 $pageRoutes = [
     "/" => [
-        "title" => "BISK8 NOVA PAGINA",
-        "iframe" => "https://docs.google.com/document/d/e/2PACX-1vQsd1IPhwS4hNttet31WZUlzMY_J4QTEF5Flwb-t4j5X_fvgs62657ha9MAmgTxfkPS_bZwscz8NbF5/pub?embedded=true",
+        "iframe" => "2PACX-1vQsd1IPhwS4hNttet31WZUlzMY_J4QTEF5Flwb-t4j5X_fvgs62657ha9MAmgTxfkPS_bZwscz8NbF5",
         "background_color" => "#ebe0cc",
         "color" => "#252527",
         "a_color" => "#0690d4",
@@ -37,7 +36,6 @@ if (array_key_exists($requestPath, $pageRoutes)) {
     $pageConfig = $pageRoutes[$requestPath];
 
     // Extract dynamic styles and content
-    $title = htmlspecialchars($pageConfig['title']);
     $iframeSrc = htmlspecialchars($pageConfig['iframe']);
     $backgroundColor = htmlspecialchars($pageConfig['background_color']);
     $color = htmlspecialchars($pageConfig['color']);
@@ -49,6 +47,17 @@ if (array_key_exists($requestPath, $pageRoutes)) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GQHJY7DQ9M"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-GQHJY7DQ9M');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{$title}</title>
@@ -76,8 +85,10 @@ if (array_key_exists($requestPath, $pageRoutes)) {
     </style>
 </head>
 <body>
-    <h1>{$title}</h1>
-    <iframe src="{$iframeSrc}"></iframe>
+    <div class="header"><a href="https://bisk8.de">bisk8.de</a> 🍪 <span class="blinking"><a href="https://macondolabs.substack.com/">assinar newsletter</a></span></div>
+    
+    <iframe src="https://docs.google.com/document/d/e/{$iframeSrc}/pub?embedded=true"></iframe>
+
 </body>
 </html>
 HTML;
