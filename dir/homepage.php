@@ -1,3 +1,36 @@
 <?php include("header.html"); ?>
-<?php include("homepage.html"); ?>
+
+<title>bisk8: diretório</title>
+<style>
+   html, body {
+           background-color: #ebe0cc;
+           color: #252527;
+   iframe {
+     border: none;
+     width: 100%;
+     height: 100%;
+        }
+   a {
+    color: #0690d4;
+    background-color: #f9da1d;
+     }
+</style>
+<iframe src="https://docs.google.com/document/d/e/2PACX-1vQsd1IPhwS4hNttet31WZUlzMY_J4QTEF5Flwb-t4j5X_fvgs62657ha9MAmgTxfkPS_bZwscz8NbF5/pub?embedded=true"></iframe>
+
+<!-- 
+    
+    <img src="static/biscoito.jpg" width="300px"><br/>
+    OS BISCOITOS MAIS GOSTOSOS DA INTERNET<br/>
+
+-->
+
+
+<!--MENU
+bisk8/<br/>
+├── <a href="/bisk8">bisk8/</a><br/>
+├── <a href="/corinthians">corinthians/</a><br/>
+└── <a href="https://f-art.me">f-art.me/</a><br/>
+<br/>
+-->
+
 <?php include("footer.html"); ?>
