@@ -1,3 +1,0 @@
-laboratoriosmacondo🍪gmail.com 
-</body>
-</html>
