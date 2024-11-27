@@ -20,7 +20,7 @@
         html, body {
             margin: 0;
             padding: 0;
-            height: 100%;
+            height: 300px;
             width: 100%;
             background-color: <?php echo $backgroundColor; ?>;
             color: <?php echo $color; ?>;
@@ -51,7 +51,6 @@
 $routes = include 'routes.php';
 
 // Display all routes with their info
-echo "<h1>Routes Information</h1>";
 echo "<table border='1' cellpadding='10' cellspacing='0' style='border-collapse: collapse;'>";
 echo "<thead>
         <tr>
@@ -76,10 +75,6 @@ foreach ($routes as $path => $info) {
     // Display the route info as a table row
     echo "<tr>
             <td><a href='" . htmlspecialchars($path) . "'>" . htmlspecialchars($path) . "</a></td>
-            <td style='background-color: $backgroundColor;'>$backgroundColor</td>
-            <td style='color: $color;'>$color</td>
-            <td style='color: $aColor;'>$aColor</td>
-            <td style='background-color: $aBackgroundColor;'>$aBackgroundColor</td>
           </tr>";
 }
 
