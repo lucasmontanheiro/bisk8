@@ -15,7 +15,7 @@ $routes = [
 $pageRoutes = [
     "/" => [
         "title" => "BISK8 NOVA PAGINA",
-        "iframe" => "https://example.com/corinthians",
+        "iframe" => "https://docs.google.com/document/d/e/2PACX-1vQsd1IPhwS4hNttet31WZUlzMY_J4QTEF5Flwb-t4j5X_fvgs62657ha9MAmgTxfkPS_bZwscz8NbF5/pub?embedded=true",
         "background_color" => "#ebe0cc",
         "color" => "#252527",
         "a_color" => "#0690d4",
