@@ -2,18 +2,25 @@ runtime: php83
 env: standard
 
 handlers:
+  # Favicon
   - url: /favicon\.ico
     static_files: favicon.ico
     upload: favicon\.ico
+
+  # Serve the index.html file
   - url: /index\.html
     static_files: index.html
     upload: index\.html
-  - url: /(.+\.(php|html|jpg))$
-    script: \1
+
+  # Serve PHP, HTML, and image files
+  - url: /(.*\.(php|html|jpg|jpeg|png|gif|bmp|webp))$
+    script: auto
+
+  # Serve static files from the /static directory
   - url: /static/(.*)
     static_files: static/\1
     upload: static/.*
-  - url: .*/(.*\.(php|html|jpg))$
-    script: \1
-  - url: .*
+
+  # Catch-all for other scripts or files
+  - url: /.*
     script: auto
