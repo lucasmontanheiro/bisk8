@@ -13,7 +13,7 @@ handlers:
   - url: /static/(.*)
     static_files: static/\1
     upload: static/.*
-  - url: .*/(.*\.(php|html))$
+  - url: .*/(.*\.(php|html|jpg))$
     script: \1
   - url: .*
     script: auto
