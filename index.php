@@ -2,15 +2,6 @@
 
 $requestPath = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-// Static file routes
-$routes = [
-    '/' => 'dir/homepage.php',
-    '/bisk8' => 'dir/bisk8.php',
-    '/corinthians' => 'dir/corinthians.php',
-    '/geco' => 'dir/geco.php',
-    '/franguinho' => 'dir/franguinho.php',
-];
-
 // Define routes with additional configurations
 $pageRoutes = [
     "/" => [
@@ -68,7 +59,7 @@ if (array_key_exists($requestPath, $pageRoutes)) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{$title}</title>
     <link rel="stylesheet" href="/assets/styles.css">
-    
+
     <style>
         html, body {
             margin: 0;
