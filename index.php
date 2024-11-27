@@ -21,13 +21,12 @@ $pageRoutes = [
         "a_background_color" => "#f9da1d",
     ],
     "/bisk8" => [
-        "title" => "Welcome to BISK8",
-        "iframe" => "https://example.com/bisk8",
-        "background_color" => "#ffffff",
-        "color" => "#000000",
-        "a_color" => "#ff0000",
-        "a_background_color" => "#cccccc",
-    ],
+        "iframe" => "2PACX-1vRr5Bq510tPsxJ8yVnURqC7iWhrhEU7oR4l9PKWH_1xwNrdjscGFVWkI0pUNLWT1EIwgMw5nUQuAJQx",
+        "background_color" => "#9a9865",
+        "color" => "white",
+        "a_color" => "yellow",
+        "a_background_color" => "",
+    ]
 ];
 
 // Check if route exists in static or dynamic routes
