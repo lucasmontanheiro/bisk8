@@ -1,4 +1,4 @@
-<?php include("header.html"); ?>
+<?php include("header.php"); ?>
 
 <title>bisk8.de</title>
 
@@ -21,4 +21,4 @@
 <iframe src="https://docs.google.com/document/d/e/2PACX-1vQsd1IPhwS4hNttet31WZUlzMY_J4QTEF5Flwb-t4j5X_fvgs62657ha9MAmgTxfkPS_bZwscz8NbF5/pub?embedded=true">
 </iframe>
 
-<?php include("footer.html"); ?>
+<?php include("footer.php"); ?>
