@@ -1,3 +1,20 @@
 <?php include("dir/header.html"); ?>
-<?php include("dir/geco.html"); ?>
+
+<title>coluna do geco</title>
+<style>
+   html, body {
+           background-color: #ebe0cc;
+           color: #252527;
+   iframe {
+     border: none;
+     width: 100%;
+     height: 100%;
+        }
+   a {
+    color: #0690d4;
+    background-color: #f9da1d;
+     }
+</style>
+<iframe src="https://docs.google.com/document/d/e/2PACX-1vTR0dB5PIY0M1clFqF-9O_oVZAVEx5TczGXpDiNddunEOfzGF_YpBz_NvTJ5BbLLH1vgLZ_X45hiDB5/pub?embedded=true"></iframe>
+
 <?php include("dir/footer.html"); ?>
