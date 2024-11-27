@@ -1,36 +1,35 @@
 html, body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%;
-            font-family: monospace;
-            font-size: 14px;
-            font-weight: bold;
-        }
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: monospace;
+    font-size: 14px;
+}
 
 .header {
     height: 30px;
 }
 
-
-
 @keyframes blink {
-        0% {
-            opacity: 1;
-            color: red; /* Start color */
-        }
-        50% {
-            opacity: 0;
-            color: blue; /* Middle color */
-        }
-        100% {
-            opacity: 1;
-            color: green; /* End color */
-        }
+    0% {
+        opacity: 1;
+        color: red; /* Start color */
     }
-    .blinking {
-        animation: blink 1.5s 3; /* Blink animation */
+    50% {
+        opacity: 0;
+        color: blue; /* Middle color */
     }
-    .biscoito {
-        font-size: 14px;
-     }
+    100% {
+        opacity: 1;
+        color: green; /* End color */
+    }
+}
+
+.blinking {
+    animation: blink 1.5s 3; /* Blink animation */
+}
+
+.biscoito {
+    font-size: 14px;
+}
