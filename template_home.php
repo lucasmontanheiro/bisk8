@@ -47,6 +47,11 @@ HOME
     <iframe src="https://docs.google.com/document/d/e/<?php echo $iframeSrc; ?>/pub?embedded=true"></iframe>
 
     <?php
+
+
+// Load dynamic routes from a separate file
+$pageRoutes = include 'routes.php';
+
 // Display all routes with their info
 echo "<h1>Routes Information</h1>";
 echo "<table border='1' cellpadding='10' cellspacing='0' style='border-collapse: collapse;'>";
