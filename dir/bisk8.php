@@ -1,6 +1,5 @@
 <?php include("dir/header.html"); ?>
 
-
 <title>bisk8 de bisk8</title>
 <style>
    html, body {
@@ -15,8 +14,7 @@
    color: yellow;
    }
 </style>
-<br/>
-<br/>
+
 <iframe src="https://docs.google.com/document/d/e/2PACX-1vRr5Bq510tPsxJ8yVnURqC7iWhrhEU7oR4l9PKWH_1xwNrdjscGFVWkI0pUNLWT1EIwgMw5nUQuAJQx/pub?embedded=true"></iframe>
 
 <?php include("dir/footer.html"); ?>
