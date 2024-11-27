@@ -23,3 +23,6 @@ html, body {
     .blinking {
         animation: blink 1.5s 3; /* Blink animation */
     }
+    .biscoito {
+        font-size: 14px;
+     }
