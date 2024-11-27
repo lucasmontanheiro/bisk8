@@ -26,6 +26,13 @@ $pageRoutes = [
         "color" => "white",
         "a_color" => "yellow",
         "a_background_color" => "",
+    ],
+    "/geco" => [
+        "iframe" => "2PACX-1vTR0dB5PIY0M1clFqF-9O_oVZAVEx5TczGXpDiNddunEOfzGF_YpBz_NvTJ5BbLLH1vgLZ_X45hiDB5",
+        "background_color" => "#ebe0cc",
+        "color" => "#252527",
+        "a_color" => "#0690d4",
+        "a_background_color" => "#f9da1d",
     ]
 ];
 
@@ -60,6 +67,8 @@ if (array_key_exists($requestPath, $pageRoutes)) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{$title}</title>
+    <link rel="stylesheet" href="/assets/styles.css">
+    
     <style>
         html, body {
             margin: 0;
