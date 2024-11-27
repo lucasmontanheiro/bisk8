@@ -32,10 +32,7 @@ $pageRoutes = [
 ];
 
 // Check if route exists in static or dynamic routes
-if (array_key_exists($requestPath, $routes)) {
-    // Include static file if available
-    require $routes[$requestPath];
-} elseif (array_key_exists($requestPath, $pageRoutes)) {
+if (array_key_exists($requestPath, $pageRoutes)) {
     // Dynamic route rendering
     $pageConfig = $pageRoutes[$requestPath];
 
