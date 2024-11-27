@@ -19,7 +19,6 @@ if (array_key_exists($requestPath, $pageRoutes)) {
     $pageData = $pageRoutes[$requestPath];
     $pageTitle = $pageData['title'];
     $iframeSrc = $pageData['iframe'];
-    $cssFile = $pageData['css'];
     include "../dir/main-template.php";
 } else {
     http_response_code(404);
