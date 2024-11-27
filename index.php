@@ -24,6 +24,13 @@ $pageRoutes = [
         "color" => "#252527",
         "a_color" => "#0690d4",
         "a_background_color" => "#f9da1d",
+    ],
+    "/franguinho" => [
+        "iframe" => "2PACX-1vTDAcNLB7WbUYpkKYTM2gf9EXGjLvs_oVBJ876xWY2prsGz1ojnpYcQwXBp15G0uyB01YwzJ-b4uVbz",
+        "background_color" => "#ebe0cc",
+        "color" => "#252527",
+        "a_color" => "#0690d4",
+        "a_background_color" => "#f9da1d",
     ]
 ];
 
@@ -62,7 +69,7 @@ if (array_key_exists($requestPath, $pageRoutes)) {
 
     <style>
         html, body {
-            margin: 0;
+            margin: 5px;
             padding: 0;
             height: 100%;
             width: 100%;
@@ -78,7 +85,6 @@ if (array_key_exists($requestPath, $pageRoutes)) {
             color: {$aColor};
             background-color: {$aBackgroundColor};
             text-decoration: none;
-            padding: 5px;
             border-radius: 5px;
         }
     </style>
@@ -88,6 +94,7 @@ if (array_key_exists($requestPath, $pageRoutes)) {
     
     <iframe src="https://docs.google.com/document/d/e/{$iframeSrc}/pub?embedded=true"></iframe>
 
+laboratoriosmacondo🍪gmail.com 
 </body>
 </html>
 HTML;
