@@ -67,7 +67,7 @@ if (array_key_exists($requestPath, $pageRoutes)) {
 
 laboratoriosmacondo🍪gmail.com 
 
-<?php
+
 // Include the routes file and retrieve the routes array
 $routes = include 'routes.php';
 
@@ -112,7 +112,6 @@ foreach ($routes as $path => $info) {
 
 echo "</tbody>";
 echo "</table>";
-?>
 
 </body>
 </html>
