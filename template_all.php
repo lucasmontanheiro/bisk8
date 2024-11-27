@@ -24,8 +24,7 @@ foreach ($routes as $path => $info) {
     
     // Display the route info as a table row
     echo "<tr>
-            <td>" . htmlspecialchars($path) . "</td>
-            <td><a href='https://docs.google.com/document/d/e/$iframe/pub' target='_blank'>View Document</a></td>
+            <td><a href='" . htmlspecialchars($path) . "'>" . htmlspecialchars($path) . "</a></td>
             <td style='background-color: $backgroundColor;'>$backgroundColor</td>
             <td style='color: $color;'>$color</td>
             <td style='color: $aColor;'>$aColor</td>
