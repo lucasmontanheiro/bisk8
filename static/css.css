@@ -5,6 +5,7 @@ html, body {
             width: 100%;
             font-family: monospace;
             font-size: 14px;
+            font-weight: bold;
         }
 @keyframes blink {
         0% {
