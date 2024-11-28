@@ -1,46 +1,52 @@
 <?php
-// Set the URL of the JSON feed
-$jsonFeedUrl = "https://rss.app/feeds/v1.1/_747p4vDuyrpWlCOE.json";
+// List of Instagram profiles to scrape
+$instagramProfiles = [
+    "https://www.instagram.com/instagram/",
+    "https://www.instagram.com/nasa/",
+    "https://www.instagram.com/natgeo/"
+];
 
 try {
-    // Fetch the JSON content
-    $jsonContent = file_get_contents($jsonFeedUrl);
+    $posts = [];
 
-    // Check if the content was fetched successfully
-    if ($jsonContent === false) {
-        throw new Exception("Unable to fetch the JSON feed.");
+    foreach ($instagramProfiles as $profileUrl) {
+        // Fetch the profile page
+        $htmlContent = file_get_contents($profileUrl);
+
+        // Check if the content was fetched successfully
+        if ($htmlContent === false) {
+            throw new Exception("Unable to fetch profile page: $profileUrl");
+        }
+
+        // Extract the shared data from the page
+        preg_match('/<script type="application\/ld\+json">(.*?)<\/script>/', $htmlContent, $matches);
+
+        if (!isset($matches[1])) {
+            throw new Exception("Unable to extract JSON data from: $profileUrl");
+        }
+
+        // Decode the extracted JSON
+        $profileData = json_decode($matches[1], true);
+
+        // Check if decoding was successful and extract posts
+        if ($profileData && isset($profileData['mainEntityofPage']['@type']) && $profileData['mainEntityofPage']['@type'] === 'ProfilePage') {
+            $posts[] = [
+                'title' => $profileData['name'] . " - Instagram Profile",
+                'url' => $profileUrl,
+                'description' => $profileData['description'] ?? 'No description available.',
+            ];
+        }
     }
 
-    // Decode the JSON content into a PHP array
-    $feed = json_decode($jsonContent, true);
-
-    // Check if decoding was successful
-    if ($feed === null) {
-        throw new Exception("Error decoding JSON feed.");
-    }
-
-    // Display the JSON feed content
-    echo "<h1>{$feed['title']}</h1>";
-    echo "<p><strong>Description:</strong> {$feed['description']}</p>";
-    echo "<p><strong>Home Page:</strong> <a href='{$feed['home_page_url']}'>{$feed['home_page_url']}</a></p>";
-    echo "<p><strong>Feed URL:</strong> <a href='{$feed['feed_url']}'>{$feed['feed_url']}</a></p>";
+    // Display the timeline
+    echo "<h1>Instagram Profile Timeline</h1>";
     echo "<ul>";
-
-    // Loop through each item in the feed
-    foreach ($feed['items'] as $item) {
+    foreach ($posts as $post) {
         echo "<li>";
-        echo "<strong>Title:</strong> <a href='{$item['url']}'>{$item['title']}</a><br>";
-        echo "<strong>Published:</strong> " . date('Y-m-d H:i:s', strtotime($item['date_published'])) . "<br>";
-        echo "<strong>Content:</strong> {$item['content_text']}<br>";
-        if (isset($item['image'])) {
-            echo "<img src='{$item['image']}' alt='Image for {$item['title']}' style='max-width: 100%; height: auto;'><br>";
-        }
-        if (isset($item['authors'])) {
-            echo "<strong>Author:</strong> " . implode(', ', array_column($item['authors'], 'name')) . "<br>";
-        }
+        echo "<strong>Title:</strong> <a href='{$post['url']}'>{$post['title']}</a><br>";
+        echo "<strong>Description:</strong> {$post['description']}<br>";
         echo "</li>";
     }
-
     echo "</ul>";
 } catch (Exception $e) {
     // Handle exceptions
