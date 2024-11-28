@@ -43,10 +43,6 @@
 </head>
 <body>
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSQOJuhEgn3KRk7QIYHfb-IHrnIhX4XJCtfoT_TEchgTE3bM9nvLgRF3V_OTGxg4U4StcXyiQpB_mbf/pubhtml?widget=true&amp;headers=false"></iframe>
-
-
-    
     <div class="container">
         <h1>Google Spreadsheet Data Viewer</h1>
         <div class="filters">
