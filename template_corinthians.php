@@ -1,9 +1,9 @@
 <?php
 // List of Instagram account JSON feed URLs
 $instagramFeeds = [
-    "https://rss.app/feeds/v1.1/_747p4vDuyrpWlCOE.json",
-    "https://rss.app/feeds/v1.1/_exampleFeed2.json",
-    "https://rss.app/feeds/v1.1/_exampleFeed3.json"
+    "https://rss.app/feeds/v1.1/_747p4vDuyrpWlCOE.json"
+    //"https://rss.app/feeds/v1.1/_exampleFeed2.json",
+    //"https://rss.app/feeds/v1.1/_exampleFeed3.json"
 ];
 
 try {
