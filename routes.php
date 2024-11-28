@@ -2,6 +2,7 @@
 return [
     "/" => [
         "template" => "template_home",
+        "title" => "bisk8.de",
         "iframe" => "2PACX-1vQsd1IPhwS4hNttet31WZUlzMY_J4QTEF5Flwb-t4j5X_fvgs62657ha9MAmgTxfkPS_bZwscz8NbF5",
         "background_color" => "#ebe0cc",
         "color" => "#252527",
@@ -10,6 +11,7 @@ return [
     ],
     "/bisk8" => [
         "template" => "template_page",
+        "title" => "bisk8 zine",
         "iframe" => "2PACX-1vRr5Bq510tPsxJ8yVnURqC7iWhrhEU7oR4l9PKWH_1xwNrdjscGFVWkI0pUNLWT1EIwgMw5nUQuAJQx",
         "background_color" => "#9a9865",
         "color" => "white",
@@ -18,6 +20,7 @@ return [
     ],
     "/geco" => [
         "template" => "template_page",
+        "title" => "biscoito do geco",
         "iframe" => "2PACX-1vTR0dB5PIY0M1clFqF-9O_oVZAVEx5TczGXpDiNddunEOfzGF_YpBz_NvTJ5BbLLH1vgLZ_X45hiDB5",
         "background_color" => "#ebe0cc",
         "color" => "#252527",
@@ -26,6 +29,7 @@ return [
     ],
     "/franguinho" => [
         "template" => "template_page",
+        "title" => "franguinho",
         "iframe" => "2PACX-1vTDAcNLB7WbUYpkKYTM2gf9EXGjLvs_oVBJ876xWY2prsGz1ojnpYcQwXBp15G0uyB01YwzJ-b4uVbz",
         "background_color" => "#ebe0cc",
         "color" => "#252527",
