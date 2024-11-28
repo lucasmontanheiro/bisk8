@@ -45,7 +45,6 @@ return [
         "a_color" => "#0690d4",
         "a_background_color" => "#f9da1d",
     ],
-    ,
     "/timeline" => [
         "template" => "template_timeline",
         "title" => "timeline",
