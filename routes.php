@@ -35,6 +35,15 @@ return [
         "color" => "#252527",
         "a_color" => "#0690d4",
         "a_background_color" => "#f9da1d",
+    ],
+    "/corinthians" => [
+        "template" => "template_corinthians",
+        "title" => "corinthians",
+        "iframe" => "2PACX-1vTDAcNLB7WbUYpkKYTM2gf9EXGjLvs_oVBJ876xWY2prsGz1ojnpYcQwXBp15G0uyB01YwzJ-b4uVbz",
+        "background_color" => "#ebe0cc",
+        "color" => "#252527",
+        "a_color" => "#0690d4",
+        "a_background_color" => "#f9da1d",
     ]
 ];
 ?>

@@ -20,7 +20,7 @@
         html, body {
             margin: 0;
             padding: 0;
-            height: 400px;
+            height: 350px;
             width: 100%;
             background-color: <?php echo $backgroundColor; ?>;
             color: <?php echo $color; ?>;
@@ -77,7 +77,7 @@ echo "</tbody>";
 echo "</table>";
 
 ?>
-
+<br/>
 laboratoriosmacondo🍪gmail.com 
 
 </body>
