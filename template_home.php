@@ -54,12 +54,7 @@ $routes = include 'routes.php';
 echo "<table border='1' cellpadding='10' cellspacing='0' style='border-collapse: collapse;'>";
 echo "<thead>
         <tr>
-            <th>Path</th>
-            <th>Iframe</th>
-            <th>Background Color</th>
-            <th>Text Color</th>
-            <th>Link Color</th>
-            <th>Link Background Color</th>
+            <th>bisk8/</th>
         </tr>
       </thead>";
 echo "<tbody>";
