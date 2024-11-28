@@ -20,7 +20,7 @@
         html, body {
             margin: 0;
             padding: 0;
-            height: 300px;
+            height: 600px;
             width: 100%;
             background-color: <?php echo $backgroundColor; ?>;
             color: <?php echo $color; ?>;
