@@ -1,3 +1,11 @@
 # bisk8
 
-this gihub is connected to Google Cloud App Engine.
+This is a blogging project. No social media, nothing. You and your cookies.
+
+---
+
+## 🚀 Features
+- This gihub is connected to Google Cloud App Engine.
+- Website: bisk8.de/
+
+---
