@@ -11,7 +11,16 @@ return [
     ],
     "/bisk8" => [
         "template" => "template_page",
-        "title" => "bisk8 zine",
+        "title" => "bisk8 zine vol 2",
+        "iframe" => "2PACX-1vSc3DRhpFLS6BYX5byaM8SS89f36b_MW5U0jkAjw79KmqY76O4YAXNusvF1FWsBcJ59RHf_oXJiBDLa",
+        "background_color" => "#fff3cc",
+        "color" => "#212529",
+        "a_color" => "yellow",
+        "a_background_color" => "",
+    ],
+    "/bisk8_1" => [
+        "template" => "template_page",
+        "title" => "bisk8 zine #1 nov 2024",
         "iframe" => "2PACX-1vRr5Bq510tPsxJ8yVnURqC7iWhrhEU7oR4l9PKWH_1xwNrdjscGFVWkI0pUNLWT1EIwgMw5nUQuAJQx",
         "background_color" => "#9a9865",
         "color" => "white",
