@@ -16,7 +16,7 @@ if (array_key_exists($requestPath, $pageRoutes)) {
     $color = htmlspecialchars($pageConfig['color']);
     $aColor = htmlspecialchars($pageConfig['a_color']);
     $aBackgroundColor = htmlspecialchars($pageConfig['a_background_color']);
-    $title = htmlspecialchars($pageConfig['title'] ?? 'Default Title');
+    $title = htmlspecialchars($pageConfig['title'] ?? 'bisk8.de');
 
     // Include the selected template
     include "{$template}.php";

@@ -8,9 +8,9 @@ handlers:
     upload: favicon\.ico
 
   # Serve the index.html file
-  - url: /index\.html
-    static_files: index.html
-    upload: index\.html
+  - url: /index\.php
+    static_files: index.php
+    upload: index\.php
 
   # Serve PHP, HTML, and image files
   - url: /(.*\.(php|html|jpg|jpeg|png|gif|bmp|webp))$
