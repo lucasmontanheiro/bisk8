@@ -1,10 +1,28 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
     font-family: monospace;
     font-size: 14px;
+    background-color: white;
+}
+
+table {
+    margin-left: 20px;
+}
+
+.header {
+    height: 20px;
+    align-content: center;
+}
+
+a {
+    color: black;
+    background-color: yellow;
+    text-decoration: none;
+    border-radius: 3px;
 }
 
 .header {
@@ -14,20 +32,26 @@ html, body {
 @keyframes blink {
     0% {
         opacity: 1;
-        color: red; /* Start color */
+        color: red;
+        /* Start color */
     }
+
     50% {
         opacity: 0;
-        color: blue; /* Middle color */
+        color: blue;
+        /* Middle color */
     }
+
     100% {
         opacity: 1;
-        color: green; /* End color */
+        color: green;
+        /* End color */
     }
 }
 
 .blinking {
-    animation: blink 1.5s 3; /* Blink animation */
+    animation: blink 1.5s 3;
+    /* Blink animation */
 }
 
 .biscoito {
