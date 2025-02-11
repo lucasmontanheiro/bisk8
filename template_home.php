@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
 
     <!-- Google tag (gtag.js) -->
@@ -21,23 +22,19 @@
 
 <div class="header"><a href="https://bisk8.de">bisk8.de</a> 🍪 <span class="blinking"><a href="https://macondolabs.substack.com/">assinar newsletter</a></span></div>
 
-    <iframe src="https://docs.google.com/document/d/e/<?php echo $iframeSrc; ?>/pub?embedded=true"></iframe>
+    <iframe width="100%" height="100%" src="https://docs.google.com/document/d/e/<?php echo $iframeSrc; ?>/pub?embedded=true"></iframe>
 
-    <?php
+<?php $routes = include 'routes.php'; ?>
 
-
-// Load dynamic routes from a separate file
-$routes = include 'routes.php';
-
-// Display all routes with their info
-echo "<table border='1' cellpadding='10' cellspacing='0' style='border-collapse: collapse;'>";
-echo "<thead>
+<table border='1' cellpadding='10' cellspacing='0' style='border-collapse: collapse;'>
+<thead>
         <tr>
             <th>bisk8/</th>
         </tr>
-      </thead>";
-echo "<tbody>";
+      </thead>
+<tbody>
 
+<?php
 foreach ($routes as $path => $info) {
     // Safely access all attributes, ensuring defaults if some keys are missing
     $iframe = htmlspecialchars($info['iframe'] ?? 'N/A');
@@ -51,11 +48,10 @@ foreach ($routes as $path => $info) {
             <td><a href='" . htmlspecialchars($path) . "'>" . htmlspecialchars($path) . "</a></td>
           </tr>";
 }
-
-echo "</tbody>";
-echo "</table>";
-
 ?>
+</tbody>
+</table>
+
 <br/>
 laboratoriosmacondo🍪gmail.com 
 
