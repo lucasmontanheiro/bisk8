@@ -12,10 +12,6 @@ handlers:
     script: auto
 
   # Serve PHP files in the templates directory
-  - url: /core
-    script: auto
-
-  # Serve PHP files in the templates directory
   - url: /templates
     script: auto
 
