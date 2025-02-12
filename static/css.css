@@ -6,7 +6,7 @@ body {
     width: 100%;
     font-family: monospace;
     font-size: 14px;
-    background-color: white;
+    background-color: #7FDBFF;
 }
 
 table {
@@ -16,6 +16,7 @@ table {
 .header {
     height: 20px;
     align-content: center;
+    margin-left: 10px;
 }
 
 a {
