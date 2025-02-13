@@ -1,5 +1,1 @@
-<?php include 'header.php'; ?>
-
-    <iframe src="https://docs.google.com/document/d/e/2PACX-1vSc3DRhpFLS6BYX5byaM8SS89f36b_MW5U0jkAjw79KmqY76O4YAXNusvF1FWsBcJ59RHf_oXJiBDLa/pub?embedded=true" width="100%" height="100%"></iframe>
-</body>
-</html>
+<iframe src="https://docs.google.com/document/d/e/2PACX-1vSc3DRhpFLS6BYX5byaM8SS89f36b_MW5U0jkAjw79KmqY76O4YAXNusvF1FWsBcJ59RHf_oXJiBDLa/pub?embedded=true" width="100%" height="100%"></iframe>
